@@ -1,0 +1,744 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  max-width: 1920px;
+  font-family: Roboto, Arial;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Cera Round Pro Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cera Round Pro Medium"),
+    url("fonts/cera-round-pro-cufonfonts-webfont/TypeMates  CeraRoundProMedium.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Cera Round Pro Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cera Round Pro Black"),
+    url("fonts/cera-round-pro-cufonfonts-webfont/TypeMates  CeraRoundProBlack.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("fonts/FuturaPT/FuturaPT-Book.woff");
+  src: local("Futura PT Book"), local("FuturaPT-Book"),
+    url("FuturaPT-Book.eot?#iefix") format("embedded-opentype"),
+    url("fonts/FuturaPT/FuturaPT-Book.woff") format("woff"),
+    url("FuturaPT-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fixed-container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.quickStart {
+  background-image: url(img/headerBackground.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 1015px;
+}
+
+.logo {
+  width: 136px;
+  height: 64px;
+  margin-top: 34px;
+  background-image: url(img/lightStudioLogo.png);
+  background-repeat: no-repeat;
+}
+
+.header {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  font-family: "Cera Round Pro Medium";
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header__nav-ul {
+  list-style: none;
+  padding: 25px;
+  margin-top: 8px;
+  font-size: 16px;
+  width: 453px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header a {
+  text-decoration: none;
+  color: #3a5b6f;
+  cursor: pointer;
+  position: relative;
+  line-height: 1;
+}
+
+.header__nav a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3a5b6f;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+.orderSite a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3a5b6f;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+.header__nav a:focus:after {
+  width: 100%;
+}
+
+.header__nav a:hover:after {
+  width: 100%;
+}
+
+.orderSite a:focus:after {
+  width: 100%;
+}
+
+.orderSite a:hover:after {
+  width: 100%;
+}
+
+.orderSite {
+  padding-top: 47px;
+  font-family: "Cera Round Pro Medium";
+}
+
+.header__phone-number {
+  padding-top: 45px;
+  font-size: 22px;
+  font-family: "Cera Round Pro Black";
+}
+
+.intro {
+  display: flex;
+  justify-content: start;
+}
+
+.introText {
+  width: 552px;
+  font-family: "Cera Round Pro Black";
+  font-size: 43px;
+  color: #3a5b6f;
+}
+
+.introText h1 {
+  margin-top: 54px;
+  margin-bottom: 32px;
+}
+
+.introText p {
+  font-family: "Futura PT Book";
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 37px;
+}
+
+.whatWeDo h2 {
+  font-family: "Cera Round Pro Black";
+  font-size: 40px;
+  color: #3a5b6f;
+  margin-top: 53px;
+}
+
+.whatWeDo_img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.whatWeDo_img h4 {
+  font-family: "Cera Round Pro Black";
+  font-size: 20px;
+  color: #3a5b6f;
+  margin-top: 21px;
+  margin-bottom: -3px;
+}
+
+.whatWeDo_img p {
+  font-family: "Futura PT Book";
+  font-size: 20px;
+  color: #3a5b6f;
+}
+
+.whatWeDo_img figure {
+  margin: 20px 0 0 0;
+  width: 261px;
+  height: 300px;
+}
+
+.shadow {
+  height: 215px;
+  background-image: url(img/shadow.png);
+  background-repeat: repeat-x;
+  margin-bottom: 91px;
+}
+
+.price {
+  height: 1341px;
+  background-color: #eef2f5;
+}
+
+.priceHeading {
+  width: 790px;
+  padding-top: 30px;
+}
+
+.priceHeading h2 {
+  font-family: "Cera Round Pro Black";
+  font-size: 41px;
+  color: #313030;
+  text-align: center;
+  margin-top: 51px;
+  margin-bottom: 21px;
+}
+
+.priceHeading p {
+  font-family: "Futura PT Book";
+  font-size: 20px;
+  text-align: center;
+}
+
+.maze {
+  display: flex;
+  justify-content: space-between;
+  height: 968px;
+  flex-wrap: wrap;
+}
+
+.block_1 {
+  display: flex;
+  width: 748px;
+  height: 453px;
+  border-radius: 9px;
+  background-color: #ffffff;
+}
+
+.block_1__1 {
+  width: 360px;
+  position: relative;
+}
+
+.block_1__2 {
+  width: 360px;
+}
+
+.addaptiveDesign {
+  width: 270px;
+  margin-left: 81px;
+}
+
+.addaptiveDesign p {
+  font-family: "Futura PT Book";
+  font-size: 21px;
+  height: 171px;
+  margin-top: -2px;
+}
+
+.gadgets {
+  display: flex;
+  justify-content: space-between;
+  width: 198px;
+  margin-top: 52px;
+}
+
+.gadgets img:nth-child(2) {
+  padding-top: 5px;
+}
+
+.gadgets img:nth-child(3) {
+  padding-top: 20px;
+}
+
+.block_1__2 h3 {
+  font-family: "Cera Round Pro Black";
+  font-size: 24px;
+  margin-top: 34px;
+}
+
+.ipad {
+  position: absolute;
+  left: 17px;
+  bottom: 72px;
+}
+
+.iphone {
+  position: absolute;
+  right: -43px;
+  bottom: 11px;
+}
+
+.block_2 {
+  width: 360px;
+  height: 453px;
+  border-radius: 9px;
+  background-color: #ffffff;
+  padding-left: 31px;
+  padding-right: 34px;
+}
+
+.block_2__img {
+  position: absolute;
+  width: 325px;
+}
+
+.block_2__img img {
+  position: relative;
+  right: 17px;
+  bottom: 7px;
+}
+
+.block_2 h3 {
+  font-family: "Cera Round Pro Black";
+  font-size: 24px;
+  margin-top: 31px;
+}
+
+.block_2 p {
+  font-family: "Futura PT Book";
+  font-size: 21px;
+}
+
+.block_3 {
+  width: 360px;
+  height: 453px;
+  border-radius: 9px;
+  background-color: #ffffff;
+  padding: 10px 34px 10px 31px;
+}
+
+.block_3 h3 {
+  font-family: "Cera Round Pro Black";
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.block_3 p {
+  font-family: "Futura PT Book";
+  font-size: 21px;
+}
+
+.block_3__img {
+  position: absolute;
+  width: 325px;
+}
+
+.block_3__img img {
+  position: relative;
+  top: 25px;
+  right: 6px;
+}
+
+.block_4 {
+  width: 360px;
+  height: 453px;
+  border-radius: 9px;
+  background-color: #ffffff;
+  padding: 10px 14px 10px 31px;
+}
+
+.block_4 h3 {
+  font-family: "Cera Round Pro Black";
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.block_4 p {
+  font-family: "Futura PT Book";
+  font-size: 21px;
+}
+
+.block_4__img {
+  position: absolute;
+  width: 325px;
+}
+
+.block_4__img img {
+  position: relative;
+  right: 30px;
+  bottom: 4px;
+}
+
+.block_5 {
+  width: 360px;
+  height: 453px;
+  padding: 6px 30px 10px 31px;
+  border-radius: 9px;
+  background-color: #ffffff;
+}
+
+.block_5 h3 {
+  font-family: "Cera Round Pro Black";
+  font-size: 24px;
+  margin-bottom: 1px;
+}
+
+.block_5 p {
+  font-family: "Futura PT Book";
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.block_5__img {
+  position: absolute;
+  width: 300px;
+  height: 256px;
+  background-image: url(img/ruShadow.png);
+  background-position: 32px 0;
+  background-repeat: no-repeat;
+}
+
+.block_5__img img {
+  position: relative;
+  left: 19px;
+  bottom: 44px;
+}
+
+.block_1:hover, .block_2:hover, .block_3:hover, .block_4:hover, .block_5:hover {
+  background: linear-gradient(to top right, #325dfe, #11c4fb);
+}
+
+.swiper {
+  height: 695px;
+  background: linear-gradient(to top right, #3849ff, #0dd1fb);
+}
+
+.swiperBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiperBlock__img {
+  width: 570px;
+}
+
+.tablets {
+  position: relative;
+  top: 63px;
+  right: 14px;
+}
+
+.swiperBlock__swiper {
+  width: 555px;
+  height: 615px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide h2 {
+  font-family: "Cera Round Pro Black";
+  font-size: 41px;
+  color: #ffffff;
+  margin-top: 3px;
+  margin-bottom: 29px;
+}
+
+.swiper-slide p {
+  font-family: "Futura PT Book";
+  font-size: 21px;
+}
+
+.orderButton {
+  cursor: pointer;
+  position: relative;
+  width: 201px;
+  height: 48px;
+  background-color: #f5e324;
+  bottom: 44px;
+  border-radius: 26px;
+  border: none;
+  font-family: "Cera Round Pro Black";
+  font-size: 14px;
+  z-index: 1;
+  padding: 0;
+  overflow: hidden;
+}
+
+.orderButton:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 100px;
+  margin-left: 60px;
+  background: #fff;
+  position: absolute;
+  left: -40px;
+  bottom: -27px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 70px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 70px;
+  }
+}
+
+.orderButton:focus {
+  outline: none;
+}
+
+.orderButton:active {
+  background-color: #ffffff;
+}
+
+.orderButton:hover {
+  box-shadow: 0 0 10px #f5e324;
+}
+
+.optionsSection {
+  padding-top: 23px;
+  background-color: #eef2f5;
+}
+
+.options__title {
+  max-width: 750px;
+  margin: 0 auto 67px;
+  text-align: center;
+}
+
+.options__title h2 {
+  font-family: "Cera Round Pro Black";
+  font-size: 41px;
+  margin-bottom: 23px;
+}
+
+.options__title p {
+  font-family: "Futura PT Book";
+  font-size: 20px;
+}
+
+.options__maze {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.options__maze h5 {
+  font-size: 30px;
+  margin-top: 33px;
+  margin-bottom: 15px;
+  font-family: "Cera Round Pro Black";
+}
+
+.options__maze p {
+  font-family: "Futura PT Book";
+  font-size: 20px;
+}
+
+.options__maze_block1,
+.options__maze_block2,
+.options__maze_block3,
+.options__maze_block4 {
+  width: 555px;
+  height: 389px;
+  margin-bottom: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 9px;
+  border: 2px solid #b7b7b7;
+}
+
+.options__maze_block1:hover,
+.options__maze_block2:hover,
+.options__maze_block3:hover,
+.options__maze_block4:hover {
+  background: linear-gradient(to top right, #325dfe, #11c4fb);
+  box-shadow: 0 0 10px #325dfe;
+}
+
+.options__maze__blocks_details {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  top: 55px;
+}
+
+.options__maze__blocks_details_price p:first-child {
+  font-size: 30px;
+  font-family: "Cera Round Pro Black";
+  margin-top: 0;
+  margin-bottom: 0px;
+  letter-spacing: -2px;
+}
+
+.options__maze__blocks_details_price p:last-child {
+  font-size: 16px;
+  font-family: "Futura PT Book";
+  margin-top: 1px;
+}
+
+.detailsBtn {
+  cursor: pointer;
+  position: relative;
+  width: 180px;
+  height: 48px;
+  background-color: #f5e324;
+  border-radius: 26px;
+  border: none;
+  font-family: "Cera Round Pro Black";
+  font-size: 14px;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.detailsBtn:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 100px;
+  margin-left: 60px;
+  background: #fff;
+  position: absolute;
+  left: -40px;
+  bottom: -27px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.detailsBtn:hover {
+  box-shadow: 0 0 10px #f5e324;
+}
+
+.detailsBtn:focus {
+  outline: none;
+}
+
+.detailsBtn:active {
+  background-color: #ffffff;
+}
+
+.additionalServices {
+  padding-top: 62px;
+  background-color: #eef2f5;
+}
+
+.additionalServices__title {
+  text-align: center;
+}
+
+.additionalServices__title h2 {
+  font-family: "Cera Round Pro Black";
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.additionalServices__title h3 {
+  font-family: "Cera Round Pro Black";
+  font-size: 24px;
+  margin-top: 19px;
+}
+
+.additionalServices__icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 58px auto 0;
+}
+
+.additionalServices__icons figure {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  width: 263px;
+}
+
+.additionalServices__icons h3 {
+  font-family: "Cera Round Pro Black";
+  font-size: 23px;
+  margin-top: 17px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+
+.additionalServices__icons p {
+  font-family: "Futura PT Book";
+  font-size: 21px;
+  margin-top: 13px;
+}
